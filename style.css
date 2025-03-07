@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    color: inherit;
+    font-family: inherit;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+    letter-spacing: 0.05em;
+
+
+    background-color: #C0EBF9;
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+
+h1 {
+    font-weight: 700;
+    font-size: 24px;
+    align-items: center;
+    color: #467745;
+    margin-bottom: 10px;
+}
+
+
+
+
+input {
+    width: 100%;
+    max-width: 600px;
+    height: 64px;
+    font-weight: 500;
+    font-size: 16px;
+    border: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+input::placeholder {
+    color: #467745;
+}
+
+textarea {
+    font-weight: 400;
+    font-size: 16px;
+    width: 100%;
+    max-width: 600px;
+    height: 120px;
+    border: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+textarea::placeholder {
+    color: #467745;
+}
+
+input[type="checkbox"] {
+    max-width: 20px;
+    min-width: 20px;
+    max-height: 20px;
+    min-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 400;
+    font-size: 16px;
+    color: #467745;
+    padding-left: 20px;
+
+}
+
+button {
+    margin-top: 5px;
+    font-weight: 800;
+    font-size: 21px;
+    height: 80px;
+    width: 100%;
+    max-width: 280px;
+    background-color: #467745;
+    color: #C0EBF9;
+    border: 0;
+    letter-spacing: 0.2em;
+}
+
+.inner-div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    padding-left: 60px;
+    max-width: 600px;
+    justify-content: left;
+}
+
+
+@media screen and (max-width: 640px) {
+    h1 {
+        width: 100%;
+        text-align: left;
+    }
+
+    .inner-div {
+        display: flex;
+        justify-content: left;
+        padding-left: 0;
+    }
+}
